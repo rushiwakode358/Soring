@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student" class="com.xmlConfiguration.Student">
+
+		<constructor-arg name="studentRoll">
+			<value>1</value>
+		</constructor-arg>
+
+		<constructor-arg name="studentName">
+			<value>Rushikesh</value>
+		</constructor-arg>
+
+		<constructor-arg name="studentBranch">
+			<value>Computer Engineering</value>
+		</constructor-arg>
+		
+		<constructor-arg name="studentAddress">
+			<value>Pune</value>
+		</constructor-arg>
+
+	</bean>
+
+	<bean id="student2" class="com.xmlConfiguration.Student">
+
+		<constructor-arg name="studentRoll" value="2"/>
+			
+
+		<constructor-arg name="studentName" value ="Rushi"/>
+			
+
+		<constructor-arg name="studentBranch" value="Computer Engineering"/>
+		
+		<constructor-arg name="studentAddress" value ="Nandura"/>
+		
+
+	</bean>
+</beans>

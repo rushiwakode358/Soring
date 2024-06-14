@@ -9,10 +9,13 @@ public class TestContainer {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 
-		// Product product = new Product();
 		Employee employee = (Employee) context.getBean("employee");
 
 		System.out.println(employee.toString());
+
+		Employee employee2 = (Employee) context.getBean("employee2");
+
+		System.out.println(employee2.toString());
 
 	}
 

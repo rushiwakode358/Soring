@@ -9,7 +9,6 @@ public class TestContainer {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 
-		// Product product = new Product();
 		Student student = (Student) context.getBean("student");
 
 		System.out.println(student.toString());

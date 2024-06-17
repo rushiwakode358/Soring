@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="employee1" class="com.SpringBeanCollaboration.Employee">
+		
+		<property name="employeeId" value= "1"/>
+		<property name="employeeName" value= "Rushikesh"/>
+		<property name="employeeRole" value= "Java Developer"/>
+		<property name="employeeSalary" value= "97543.34"/>
+		
+		<property name="department" ref ="department1"/>
+		
+		
+	</bean>
+	
+	<bean id="department1" class="com.SpringBeanCollaboration.Department">
+		
+		<property name="departmentId" value= "4"/>
+		<property name="departmentName" value= "Development"/>
+				
+	</bean>
+
+	
+</beans>

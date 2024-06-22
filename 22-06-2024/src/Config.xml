@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	 <!-- <bean id="employee" class="com.SpringBeanScope.Employee" scope="singleton"> -->
+	<bean id="employee" class="com.SpringBeanScopeXMLConfigAutowired.Employee" scope="prototype">
+		<constructor-arg name="employeeId" value="1" />
+		<constructor-arg name="employeeName" value="Rushi" />
+		<constructor-arg name="employeeRole" value="Web Developer" />
+		<constructor-arg name="employeeSalary" value="99856.58" />
+		<property name="department" ref="department"/>
+	</bean>
+	
+	<bean id="department" class="com.SpringBeanScopeXMLConfigAutowired.Department" scope="prototype">
+		<constructor-arg name="departmentId" value="101" />
+		<constructor-arg name="departmentName" value="Development" />
+	</bean>
+
+
+
+</beans>
